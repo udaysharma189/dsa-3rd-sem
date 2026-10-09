@@ -1,0 +1,46 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+
+void intersection(vector<int>& a, vector<int>& b, int m, int n){
+    int i = 0, j = 0;
+    vector<int> c;
+
+    while(i < m && j < n){
+        if(a[i] < b[j]){
+            i++;
+        }
+        else if(b[j] < a[i]){
+            j++;
+        }
+        else{
+            c.push_back(a[i]);
+            i++;
+            j++;
+        }
+    }
+
+    for(int k = 0; k < c.size(); k++){
+        cout << c[k] << " ";
+    }
+}
+
+int main(){
+    vector<int> a;
+    a.push_back(5);
+    a.push_back(10);
+    a.push_back(15);
+    a.push_back(20);
+    a.push_back(25);
+
+    vector<int> b;
+    b.push_back(3);
+    b.push_back(6);
+    b.push_back(9);
+    b.push_back(12);
+    b.push_back(15);
+
+    intersection(a, b, a.size(), b.size());
+
+    return 0;
+}
