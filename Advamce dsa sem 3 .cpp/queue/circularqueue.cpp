@@ -11,8 +11,8 @@ public:
     Queue(int SIZE) {
         item.resize(SIZE);
         size = SIZE;
-        rear = 0;
-        front = 0;
+        rear = SIZE - 1;
+        front = SIZE - 1;
     }
 
     bool IsEmpty() {
@@ -31,6 +31,7 @@ public:
 
         item[rear] = x;
         rear = (rear + 1) % size;
+        
     }
 
     int DeQueue() {
