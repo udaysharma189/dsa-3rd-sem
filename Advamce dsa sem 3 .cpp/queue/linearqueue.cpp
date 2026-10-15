@@ -25,14 +25,29 @@ class queue{
         else{
             cout<<"Queue is full"<<endl;
         }   
-        void Dequeue(){
-            if(Isempty()){  
-                
-                cout<<"Queue is empty"<<endl;
-            }
-            else{
+    }
+    void Dequeue(){
+        if(Isempty()){  
+            
+            cout<<"Queue is empty"<<endl;
+        }
+        else{
                 cout<<"Deleted element is "<<item[front]<<endl;
                 front++;
             }   
     }
-}
+};
+int main(){
+    queue q(5);
+    q.Enqueue(10);
+    q.Enqueue(20);
+    q.Enqueue(30);
+    q.Enqueue(40);
+    q.Enqueue(50);
+    q.Dequeue();
+    q.Dequeue();
+    q.Dequeue();
+    q.Dequeue();
+    q.Dequeue();
+    return 0;
+}// linear queue implementation using array
