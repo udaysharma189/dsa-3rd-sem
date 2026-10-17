@@ -10,4 +10,4 @@ class queue{
         rear=-1;
         front=0;
     }   
-// prioprity queue 
+// prioprity queue and operation 
