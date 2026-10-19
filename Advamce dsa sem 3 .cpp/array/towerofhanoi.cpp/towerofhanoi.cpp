@@ -18,4 +18,4 @@ int main() {
     toh(n, 'S', 'M', 'D');
 
     return 0;
-}
+}// tower of hanoi
