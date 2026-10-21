@@ -51,4 +51,4 @@ int main(){
     
     merge(a, b, a.size(), b.size());
     return 0;
-}
+}// merge array code
