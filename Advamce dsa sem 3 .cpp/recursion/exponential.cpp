@@ -26,4 +26,4 @@ int main() {
     cout << p2 << endl;
 
     return 0;
-}
+}// power code
