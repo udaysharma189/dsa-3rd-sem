@@ -22,4 +22,4 @@ int main() {
     }
 
     return 0;
-}// decimal to binary code
+}// decimal to binary code revesion
