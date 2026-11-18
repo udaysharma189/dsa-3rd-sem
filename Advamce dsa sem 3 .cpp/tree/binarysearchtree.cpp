@@ -89,7 +89,10 @@ int main() {
     insert(root, 12);
     insert(root, 11);
     insert(root, 10);
-    insert(root, 3);
+    insert(root, 22);
+    insert(root, 18);
+    insert(root, 17);
+    insert(root, 16);
 
     cout << "Inorder: ";
     inorder(root);
