@@ -74,7 +74,7 @@ int findMax(Node* root) {
     return root->data;
 }
 
-// Main Function
+//*** */ Main Function
 int main() {
     Node* root = NULL;
 
@@ -96,14 +96,11 @@ int main() {
 
     cout << "Inorder: ";
     inorder(root);
-
     cout << "\nMinimum: " << findMin(root);
     cout << "\nMaximum: " << findMax(root);
-
     int key;
     cout << "\nEnter element: ";
     cin >> key;
-
     if (search(root, key))
         cout << "Element Found";
     else
